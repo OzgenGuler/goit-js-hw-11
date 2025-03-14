@@ -117,12 +117,13 @@ form.addEventListener('submit', async e => {
     item.classList.add('gallery-item');
 
     const itemLoader = document.createElement('span');
-    itemLoader.classList.add('loader');
-
-    item.appendChild(itemLoader);
-    item.style.textAlign = 'center';
-    item.style.border = 'none';
-    galleryList.appendChild(item);
+    setTimeout(() => {
+      item.appendChild(itemLoader);
+      item.style.textAlign = 'center';
+      item.style.border = 'none';
+      galleryList.appendChild(item);
+      itemLoader.classList.add('loader');
+    }, 5000);
 
     axios
       .get('https://pixabay.com/api/', {
