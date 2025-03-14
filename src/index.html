@@ -17,7 +17,7 @@
   <div class="app">
     <form action="POST" class="app-form">
       <input type="text" name="search" id="search" placeholder="Search images..." />
-      <input type="submit" value="Search" />
+      <input type="submit" value="Search" id="search-btn" />
     </form>
     <ul class="gallery" id="galleryList">
       <!-- <li class="gallery-item">
@@ -43,7 +43,7 @@
         </li> -->
 
     </ul>
-    <!-- <div class="loader"></div> -->
+    <div class="loader" id="hidden"></div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.13.0/dist/tf.min.js"></script>

@@ -117,13 +117,22 @@ form.addEventListener('submit', async e => {
     item.classList.add('gallery-item');
 
     const itemLoader = document.createElement('span');
-    setTimeout(() => {
-      item.appendChild(itemLoader);
-      item.style.textAlign = 'center';
-      item.style.border = 'none';
-      galleryList.appendChild(item);
-      itemLoader.classList.add('loader');
-    }, 5000);
+    itemLoader.classList.add('loader');
+
+    item.appendChild(itemLoader);
+    item.style.textAlign = 'center';
+    item.style.border = 'none';
+    galleryList.appendChild(item);
+
+    document
+      .getElementById('search-btn')
+      .addEventListener('click', function () {
+        const divLoader = document.getElementById('hidden');
+        divLoader.classList.remove('loader');
+        setTimeout(() => {
+          loader.classList.add('loader');
+        }, 3000);
+      });
 
     axios
       .get('https://pixabay.com/api/', {
