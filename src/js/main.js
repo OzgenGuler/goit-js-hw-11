@@ -127,7 +127,7 @@ form.addEventListener('submit', async e => {
     axios
       .get('https://pixabay.com/api/', {
         params: {
-          key: '21250106-0015933422f1e636de5f184b8',
+          key: '49344582-c64095957e0f61b264d1bf806',
           q: search,
           image_type: 'photo',
           orientation: 'horizontal',
