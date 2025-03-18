@@ -1,12 +1,12 @@
 {
   "name": "goit-js-hw-11",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.343",
   "type": "module",
   "homepage": "https://ozgenguler.github.io/goit-js-hw-11",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=goit-hw-js-11",
+    "build": "vite build --base=/goit-hw-js-11/",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
