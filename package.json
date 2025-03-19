@@ -6,7 +6,7 @@
   "homepage": "https://ozgenguler.github.io/goit-js-hw-11",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/goit-hw-js-11/",
+    "build": "vite build ",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
